@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'SF Compact Rounded';
+    src: url("../font/FontsFree-Net-SF-Compact-Rounded-Regular.ttf");
+    font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.calculator {
+    width: 235px;
+    height: 235px;
+    background: radial-gradient(186.24% 135.14% at 48.06% -35.14%, #F1F1ED 25.44%, #D6DDE2 100%);
+    box-shadow: 0px 20px 12px -10px rgb(49 54 63 / 40%), 0px 3px 2px -2px rgb(0 0 0 / 25%), inset 0px 0px 0px #9e9e9e, inset 0px 2px 2px 1px #f0f0f0;
+    border-radius: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.field {
+    display: flex;
+    max-width: 207px;
+    max-height: 69px;
+    margin-bottom: 10px;
+    padding: 6px 18px 6px 25px;
+
+    font-family: 'SF Compact Rounded';
+    font-size: 48px;
+    line-height: 57px;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    color: #18F1FF;
+    text-shadow: 0px 0px 0px rgba(49, 202, 216, 0.6);
+
+    background: linear-gradient(99.37deg, rgba(255, 255, 255, 0.1276) 4.26%, rgba(255, 255, 255, 0.044) 37.4%, rgba(255, 255, 255, 0) 38.29%), #252525;
+    box-shadow: 0px 0px 0px 0px rgb(82 82 82), 0px -1px 5px -1px rgba(54, 54, 54, 1), 0px 0.5px 0px 0px rgb(141 131 131 / 36%) inset;
+
+    border: 1px solid;
+    border-radius: 20px;
+    border-image-source: radial-gradient(100% 100% at 50% 0%, #000000 0%, #1C1C1C 100%);
+}
+
+.field::-webkit-inner-spin-button { 
+    display: none;
+}
+
+.field::placeholder {
+    width: 160px;
+    font-family: 'SF Compact Rounded';
+    font-size: 48px;
+    line-height: 57px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: center;
+    color: #18F1FF;
+    text-shadow: 0px 0px 0px rgba(49, 202, 216, 0.6);
+}
+
+.button-block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 207px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.action input[type=radio] {
+	display: none;
+}
+
+.action label {
+	display: flex;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+	user-select: none;
+
+    background-blend-mode: lighten;
+    background: radial-gradient(100% 100% at 64% 100%, #333333 0%, #000000 68.79%, #323232 90.82%), radial-gradient(109% 109% at 40% 100%, #37D6E0 0%, #0D82A7 100%);
+    box-shadow: 0px 0px 0px 1px rgb(63 63 63), 2px 3px 3px -1px rgb(0 0 0 / 25%), 1px 2px 2px -2px rgb(255 255 255 / 65%) inset, 0px 6px 6px 0px rgb(64 64 64 / 40%);
+    
+    border: 1px;
+    border-radius: 27px;
+    border-image-source: radial-gradient(100% 100% at 64% 100%, #333333 0%, #000000 68.79%, #323232 90.82%);
+    
+    font-family: 'SF Compact Rounded';
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.action:last-child label {
+    width: 80px;
+    height: 50px;
+    border-radius: 27px;
+    justify-content: center;
+    background-blend-mode: color-dodge;
+    background: radial-gradient(109% 109% at 40% 100%, #EFEFEF 0%, #B7C7C8 100%);
+}
+
+.action label:hover {
+    background: radial-gradient(100% 100% at 64% 100%, #333333 0%, #000000 68.79%, #323232 90.82%), radial-gradient(109% 109% at 40% 100%, #00ff0c 0%, #19b62e 100%);
+}
+
+.action label:active {
+    background: radial-gradient(100% 100% at 64% 100%, #333333 0%, #000000 68.79%, #323232 90.82%), radial-gradient(109% 109% at 40% 100%, #00ff0c 0%, #19b62e 100%);
+    transform: scaleX(1) translateY(2px);
+}
+
+.action:last-child label:hover {
+    background: radial-gradient(100% 100% at 53% 65%, #333333 0%, #000000 60.79%, #323232 91.82%), radial-gradient(68% 133% at 43% 133%, #daff00 10%, #ddc611 71%);
+}
